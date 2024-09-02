@@ -73,6 +73,19 @@ checkbook.py
 Test
 
 Explanation of the Fix:
+Explanation of the Fixes:
+Error Handling in Input Conversion:
+
+try and except blocks: Added around float(input(...)) to catch ValueError exceptions that occur if the input cannot be converted to a float. This prevents the program from crashing and provides a user-friendly error message.
+Documentation for Methods:
+
+Added docstrings to the Checkbook methods to describe their purpose and parameters. This improves code readability and helps understand the functionality of each method.
+How to Test:
+Run the script.
+Test valid inputs by entering numeric values for deposit and withdrawal.
+Test invalid inputs (e.g., entering text instead of a number) to ensure the error handling works as expected.
+Verify that commands like balance and exit work correctly.
+With these modifications, the program should be more robust and user-friendly, handling invalid inputs gracefully without crashing.
 
 6-
 tic.py
@@ -80,3 +93,26 @@ tic.py
 Test
 
 Explanation of the Fix:
+Explanation of the Fixes:
+Player Win Announcement:
+
+The player variable is checked for winning and is only switched if no one has won yet.
+Out-of-Bounds Input Handling:
+
+Added a check to ensure the input values for row and column are within the range [0, 1, 2].
+Check for Draw Condition:
+
+Added the is_draw() function to check if the board is full and there’s no winner, indicating a draw.
+Exception Handling:
+
+Added a try-except block to handle non-numeric inputs, preventing the program from crashing.
+How to Test:
+Valid Inputs:
+
+Test by entering valid row and column values and make sure the game progresses correctly and announces winners or draws accurately.
+Invalid Inputs:
+
+Test by entering values outside the range (e.g., -1, 3) and non-numeric values to ensure the error handling works.
+Draw Condition:
+
+Test scenarios where all cells are filled without any player winning to ensure the draw condition is handled properly.
