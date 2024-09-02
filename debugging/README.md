@@ -49,6 +49,8 @@ Win Condition Check: After revealing a cell, the game checks if self.revealed_co
 factorial_recursive.py
 
 Test
+$ ./factorial_recursive.py 4
+24
 
 Breakdown of the Documentation:
 Function Description:
