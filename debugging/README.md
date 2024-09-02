@@ -31,22 +31,33 @@ change_background.html
 
 Test
 
+Explanation of the Fix:
+Corrected the id of the button: Changed id="colorButon" to id="colorButton" in the HTML to match what the JavaScript is referencing.
+
 3-
 mines.py
 
 Test
+
+Explanation of the Fix:
 
 4-
 factorial_recursive.py
 
 Test
 
+Explanation of the Fix:
+
 5-
 checkbook.py
 
 Test
 
+Explanation of the Fix:
+
 6-
 tic.py
 
 Test
+
+Explanation of the Fix:
