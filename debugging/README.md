@@ -50,6 +50,21 @@ factorial_recursive.py
 
 Test
 
+Breakdown of the Documentation:
+Function Description:
+
+Provides a brief overview of what the function does, including the recursive nature of the computation.
+Explains the concept of factorial and provides an example.
+Parameters:
+
+Describes the parameter n, specifying that it should be a non-negative integer.
+Returns:
+
+Explains what the function returns. It states that the result is the factorial of the given integer and notes the special case when n is 0.
+Additional Notes:
+Make sure to maintain proper indentation in your code for readability and correctness. In the provided code, the indentation of the return statement inside the factorial function was corrected.
+This documentation style, which follows the convention of using triple quotes for docstrings, is helpful for generating documentation and understanding the code better.
+
 Explanation of the Fix:
 
 5-
