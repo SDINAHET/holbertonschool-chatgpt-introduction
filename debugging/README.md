@@ -89,6 +89,22 @@ Test invalid inputs (e.g., entering text instead of a number) to ensure the erro
 Verify that commands like balance and exit work correctly.
 With these modifications, the program should be more robust and user-friendly, handling invalid inputs gracefully without crashing.
 
+Changes Made:
+Added Docstrings:
+
+__init__: Describes the initialization of the Checkbook class.
+deposit: Explains the parameters and what the method does.
+withdraw: Explains the parameters and what the method does.
+get_balance: Describes the method and its purpose.
+main: Provides a description of the main function's purpose.
+Error Handling:
+
+Wrapped the float conversion in try blocks to catch ValueError exceptions for invalid numeric inputs. This prevents the program from crashing and prompts the user with a relevant error message if they enter non-numeric values.
+Input Sanitization:
+
+Used .strip() to remove any leading or trailing whitespace from user input before processing.
+These changes improve the robustness of the code, making it more user-friendly and resistant to invalid input.
+
 6-
 tic.py
 
