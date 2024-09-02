@@ -38,8 +38,12 @@ Corrected the id of the button: Changed id="colorButon" to id="colorButton" in t
 mines.py
 
 Test
+Run the script and reveal cells. If all non-mine cells are revealed without hitting a mine, the game should print "Congratulations! You've won the game."
 
 Explanation of the Fix:
+self.revealed_count: Added to keep track of how many cells have been revealed.
+self.non_mine_cells: Stores the number of cells that are not mines (total_cells - mines).
+Win Condition Check: After revealing a cell, the game checks if self.revealed_count equals self.non_mine_cells. If true, the player wins the game, and a congratulatory message is displayed.
 
 4-
 factorial_recursive.py
