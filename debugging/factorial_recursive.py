@@ -15,6 +15,7 @@ def factorial(n):
     Returns:
     int: The factorial of the integer n. If n is 0, the function returns 1 as per the definition of factorial.
     """
+
     if n == 0:
         return 1
     else:
