@@ -12,6 +12,7 @@ class Minesweeper:
         self.mines = set(random.sample(range(width * height), mines))
         self.field = [[' ' for _ in range(width)] for _ in range(height)]
         self.revealed = [[False for _ in range(width)] for _ in range(height)]
+        self.non_mine_cells = width * height - mines  # Track non-mine cells
 
     def print_board(self, reveal=False):
         clear_screen()
@@ -50,6 +51,10 @@ class Minesweeper:
                     if 0 <= nx < self.width and 0 <= ny < self.height and not self.revealed[ny][nx]:
                         self.reveal(nx, ny)
         return True
+
+    def check_win(self):
+        revealed_cells = sum(sum(row) for row in self.revealed)
+        return revealed_cells == self.non_mine_cells
 
     def play(self):
         while True:
